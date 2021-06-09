@@ -18,7 +18,6 @@ Web application for a hairdresser’s clients. Her clients can visit this page t
 ## User Story
 
 ```
-
 AS A hairdresser's client
 I WANT to visit this webpage
 SO THAT I can see what services are offered
