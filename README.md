@@ -34,7 +34,7 @@ SO THAT I can find the salon
 The link to our wireframe can be found on Figma at the following link:
 > [Figma Project1 Link](https://www.figma.com/file/CQvJu55Ah4v6Tz9nYmuzbH/Project-1?node-id=0%3A1)
 
-![Screenshot of our Hairdresser Website ](project1_figma.png)
+![Screenshot of our Hairdresser Website ](./assets/images/project1_figma.png)
 
 ## APIs to be used
 
