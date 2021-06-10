@@ -12,3 +12,17 @@
 .navbar-dropdown .navbar-item {
     background-color:teal ;
 }
+
+/* Paola's Style for Google Map */
+#mapHeader {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#map {
+    height: 300px;
+    width: 50%;
+    display: block;
+    margin: 40px;
+    border: 2px double rgb(223, 118, 118);
+}
