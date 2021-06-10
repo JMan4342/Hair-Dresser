@@ -15,20 +15,27 @@ function initMap() {
   });
 };
 
+// fetch("https://api.pexels.com/v1/collections/hair-dresser-6qa6dek", {
+//   headers: {
+//     Authorization: "563492ad6f91700001000001207f3ab348db4147b699565de961df61"
+//   }
+// })
+//    .then(resp => {
+//      return resp.json()
+//    })
+//    .then(data => {
+//      console.log(data)
+//    })
 
-//PAOLA'S FUNCTION FOR PEXELS API
-// var apiKey = 
-// var pexelUrl = "https://api.pexels.com/v1/photos/", {
-//     headers: {
-//         Authorization: 
-//     }
-// }
-    
-// fetch(pexelUrl)
-// .then(function (response) {
-//     console.log(response)
-//     return response.json();
-// })
-// .then(function (data) {
-//     console.log(data);
-// })
+// Access photos from Pexel site through
+fetch("https://api.pexels.com/v1/search?query=hairdresser&page=1&per_page=5", {
+  headers: {
+    Authorization: "563492ad6f91700001000001207f3ab348db4147b699565de961df61"
+  }
+})
+   .then(resp => {
+     return resp.json()
+   })
+   .then(data => {
+     console.log(data)
+   })
