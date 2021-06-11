@@ -1,4 +1,4 @@
-//PAOLA'S FUNCTION FOR GOOGLE MAP
+//PAOLA'S FUNCTION FOR GOOGLE MAPS
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 32.24413848450306, lng: -110.9081052153426 },
@@ -32,12 +32,10 @@ fetch("https://api.pexels.com/v1/collections/6qa6dek", {
     console.log(data);
     console.log(data.media[0].src.medium);
     for (let i = 0; i < data.media.length; i++) {
+      
       var image = document.createElement("img");
-      image.setAttribute(
-        "src",
-       "https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&h=350"
-       );
-      var photo2 = document.querySelector("#photos");
+      image.setAttribute("src", "https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&h=350");
+      var photo2 = document.querySelector("#photos[index]"); //Paola's note
       photo2.append(image);
     }
   });
