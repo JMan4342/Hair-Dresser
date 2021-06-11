@@ -67,7 +67,7 @@ submitBtn.addEventListener("click", function(event) {
 
   if(customerName.trim().length < 1) {
     window.alert("Please enter a name");//success
-  } else if (localStorage == null) {
+  } else /*(localStorage == null)*/{
     console.log("something is in local storage");//success
 
     var customerName = document.getElementById("customerName").value;
@@ -87,9 +87,5 @@ submitBtn.addEventListener("click", function(event) {
   } else {
     console.log("there is nothing in local storage yet");//success
   }
-
-
-
-
 
 })
