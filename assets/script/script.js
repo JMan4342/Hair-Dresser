@@ -62,6 +62,7 @@ submitBtn.addEventListener("click", function(event) {
 
   if(customerName.trim().length < 1) {
     window.alert("Please enter a name");//success
+
   } else if (localStorage.customerArray != null){
     console.log("something is in local storage");//success
 
@@ -79,8 +80,18 @@ submitBtn.addEventListener("click", function(event) {
       message: customerMsg,
     }
 
+    //Appending to form
+    var thanks = document.querySelector("#thanks");
+    thanks.setAttribute("class", "reveal");
+    thanks.textContent= "Thank you for signing up, " + customerObj.name + "! We will get in touch with you soon."
+
+    //Hiding welcome
+    var welcome = document.getElementById("welcome");
+    welcome.setAttribute("class", "hide");
+
+    //sending it back to storage
     savedCustomerArray.push(customerObj);
-    localStorage.setItem("customerArray", JSON.stringify(savedCustomerArray));//sending it back to storage
+    localStorage.setItem("customerArray", JSON.stringify(savedCustomerArray));
 
   } else {
     console.log("there is nothing in local storage yet");//success
@@ -97,7 +108,10 @@ submitBtn.addEventListener("click", function(event) {
       message: customerMsg,
     }
 
-    console.log(customerObj);//success
+    //Appending to form
+    var thanks = document.querySelector("#thanks");
+    thanks.setAttribute("class", "reveal");
+    thanks.textContent= "Thank you for signing up, " + customerObj.name + "! We will get in touch with you soon."
 
     customerArray.push(customerObj);
 
@@ -105,3 +119,32 @@ submitBtn.addEventListener("click", function(event) {
   };
 
 });
+
+// PAOLA'S FUNCTIONS TO APPEND------------------------------------------
+//Window reload function
+
+window.addEventListener("load", function(event) {
+  event.preventDefault();
+  
+  if(localStorage.customerArray != null) {
+    var customerArray = JSON.parse(localStorage.getItem("customerArray"));
+    console.log(customerArray[0].name);
+    console.log(customerArray.length-1);
+    
+    var lastCustomer = customerArray.length - 1;
+    var customerName = customerArray[lastCustomer].name
+    
+    var welcome = document.getElementById("welcome");
+    welcome.textContent= "Welcome back, " + customerName + "!" + " We are happy to see you!"
+
+    if(welcome.className == "hide") {
+      welcome.setAttribute("class", "reveal");
+    };
+
+  } else {
+    console.log("customer has not visited before");
+    var welcome = document.getElementById("welcome");
+    welcome.setAttribute("class", "hide");
+  }
+});
+
