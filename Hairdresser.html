@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets\styles\Hairdresser.css" />
     <title>Hairdresser</title>
   </head>
+
+  <!--NAVBAR-->
   <body>
     <nav class="navbar">
       <!-- logo/brand-->
@@ -52,12 +54,173 @@
         </div>
     </nav>
 
-    <!--Paola's Map, tutorial found on https://youtu.be/Zxf1mnP5zcw-->
-    <h2 id= mapHeader>Find Us!</h2>
-    <div id="map"></div>
+    <!--ABOUT ME-->
+    <div class = "column is-full">
+      <h2>About Me</h2>
+    </div>
+    <!--Hairdresser card-->
+    <div class ="columns">
+      <div class="column card is-one-quarter">
+        <div class="card-image">
+          <figure class="image is-square">
+            <img src="/assets/images/hairdresserImage.jpg" alt="Image of Hairdresser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            Welcome to my page! My name is Rocio and I have been a hairdresser for 27 years!
+            I am looking forward to meeting you and helping you achieve your best hairlook. 
+            I use the best hair products that will leave your hair feeling renewed. 
+            Check out my services below and contact us if you are interested in appointment.
+          </div>
+        </div>
+      </div>
+      <!--Pexel Image Area-->
+      <div class="column">
+        <figure class= "image is-3by4" id="photos">
+          <img src="https://bulma.io/images/placeholders/256x256.png">
+        </figure>
+      </div>
+      <div class="column">
+        <figure class= "image is-3by4">
+          <img src="https://bulma.io/images/placeholders/256x256.png">
+        </figure>
+      </div>
+      <div class="column">
+        <figure class= "image is-3by4">
+          <img src="https://bulma.io/images/placeholders/256x256.png">
+        </figure>
+      </div>
+    </div>
+
+
+    <!--TABLE ABOUT PRICES-->
+    <div class = "column is-full">
+      <h2>Prices and Services</h2>
+    </div>
+    <div class="table-container">
+      <table class="table is-fullwidth is-striped">
+        <!-- Your table content -->
+        <thead>
+          <tr>
+            <th>Haircuts</th>
+            <th>Haircolor</th>
+            <th>Perms</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Haircuts price1</td>
+            <td>Haircolor price1</td>
+            <td>Perms price1</td>
+          </tr>
+          <tr>
+            <td>Haircuts price2</td>
+            <td>Haircolor price2</td>
+            <td>Perms price2</td>
+          </tr>
+          <tr>
+            <td>Haircuts price3</td>
+            <td>Haircolor price3</td>
+            <td>Perms price3</td>
+          </tr>
+          <tr>
+            <td>Haircuts price4</td>
+            <td>Haircolor price4</td>
+            <td>Perms price4</td>
+          </tr>
+          <tr>
+            <td>Haircuts price5</td>
+            <td>Haircolor price5</td>
+            <td>Perms price5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!--GOOGLE MAP, tutorial found on https://youtu.be/Zxf1mnP5zcw-->
+    <div class = "column is-full">
+      <h2>Find Us!</h2>
+    </div>
+    <div class= "column is-full">
+      <div class="column container">
+        <p> Click on the pin to open Google Maps </p>
+      </div>
+      <div class="column container">
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <!--CONTACT FORM-->
+    <div class="column is-full">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="column is-two-fifths box">
+      <!--Name-->
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input is-info" type="text" placeholder="Your Name">
+        </div>
+      </div>
+
+      <!--Email-->
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left">
+          <input class="input is-info" type="email" placeholder="youremail@email.com" value="">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
+      
+      <!--Phone Number-->
+      <div class="field">
+        <label class="label">Phone Number</label>
+        <div class="control has-icons-left">
+          <input class="input is-info" type="tel" placeholder="###-###-####" value="">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
+
+      <!--Message-->
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea is-info" placeholder="Hello! I would like an appointment..."></textarea>
+        </div>
+      </div>
+
+      <!--Buttons-->
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+
+
+    </div>
     
     <!--Joseph's image code for photos-->
     <div id = "photos"></div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
 
     <!--Google Maps script-->
     <script async
