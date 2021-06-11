@@ -71,13 +71,13 @@ submitBtn.addEventListener("click", function(event) {
     var customerEmail = document.getElementById("customerEmail").value;
     var customerNum = document.getElementById("customerNum").value;
     var customerMsg = document.getElementById("customerMsg").value;
-    
-    var customerObj {
-      name: customerName,
-      email: customerEmail,
-      number:  customerNum,
-      message: customerMsg,
-    }
+
+    // var customerObj {
+    //   name: customerName,
+    //   email: customerEmail,
+    //   number:  customerNum,
+    //   message: customerMsg,
+    // }
 
     console.log(customerObj);
 
