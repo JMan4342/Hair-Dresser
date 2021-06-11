@@ -23,15 +23,13 @@
       <div class="navbar-brand">
         <a class="navbar-item">
           <img src= "assets/images/hairdresserLogo.png" alt="#" style="max-height: 40px"
-        /></a>
-      </div>
+        /></a> 
       <!-- social media links-->
-      <div class="navbar-brand">
         <a class="navbar-item" href="#">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
           <a href="#" class="fa fa-instagram"></a>
-      </div>
+        </div>
       <!-- dropdown menu-->
       <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable">
@@ -41,24 +39,25 @@
           
               <div class="navbar-dropdown">
                 <a class="navbar-item">
-                  ####
+                  About me
                 </a>
                 <a class="navbar-item">
-                  ####
+                  Prices and Services
                 </a>
                 <a class="navbar-item">
-                  ####
+                  Contact Us
                 </a>   
         </div>
     </nav>
 
     <!--DON'T DELETE, LOCAL STORAGE APPEND-->
-    <div class = "column is-full" id="welcome">
-      <h2>Welcome back CUSTOMER</h2>
-    </div>
+    
 
     <!--ABOUT ME-->
     <div class="box">
+      <div class = "column is-full" id="welcome">
+        <h2>Welcome back CUSTOMER</h2>
+      </div>
       <div class = "column is-full">
         <h2>About Me</h2>
       </div>
@@ -82,17 +81,17 @@
         </div>
         <!--Pexel Image Area-->
         <div class="column">
-          <figure class= "image is-3by4" id="photos0">
+          <figure class= "image is-3by4" id="photos">
             <img src="https://bulma.io/images/placeholders/256x256.png">
           </figure>
         </div>
         <div class="column">
-          <figure class= "image is-3by4" id="photos1">
+          <figure class= "image is-3by4">
             <img src="https://bulma.io/images/placeholders/256x256.png">
           </figure>
         </div>
         <div class="column">
-          <figure class= "image is-3by4" id="photos2">
+          <figure class= "image is-3by4">
             <img src="https://bulma.io/images/placeholders/256x256.png">
           </figure>
         </div>
@@ -176,61 +175,62 @@
     </div>
 
     <!--CONTACT FORM-->
-    <div class="column is-full contact">
-      <h2>Contact Us</h2>
+    <div class="box contactUsBox">
+     <div class="column is-full contact">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="column is-two-fifths box userInput">
+        <!--Name-->
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input is-info" id="customerName" type="text" placeholder="Your Name">
+          </div>
+        </div>
+
+        <!--Email-->
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left">
+            <input class="input is-info" id="customerEmail" type="email" placeholder="youremail@email.com" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
+        
+        <!--Phone Number-->
+        <div class="field">
+          <label class="label">Phone Number</label>
+          <div class="control has-icons-left">
+            <input class="input is-info" id="customerNum" type="tel" placeholder="###-###-####" value="">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
+
+        <!--Message-->
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea is-info" id="customerMsg" placeholder="Hello! I would like an appointment..."></textarea>
+          </div>
+        </div>
+
+        <!--Buttons-->
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" id="submit">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light" id="cancel">Cancel</button>
+          </div>
+        </div>
+
+
+      </div>
     </div>
-    <div class="column is-two-fifths box">
-      <!--Name-->
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input is-info" id="customerName" type="text" placeholder="Your Name">
-        </div>
-      </div>
-
-      <!--Email-->
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control has-icons-left">
-          <input class="input is-info" id="customerEmail" type="email" placeholder="youremail@email.com" value="">
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-        </div>
-      </div>
-      
-      <!--Phone Number-->
-      <div class="field">
-        <label class="label">Phone Number</label>
-        <div class="control has-icons-left">
-          <input class="input is-info" id="customerNum" type="tel" placeholder="###-###-####" value="">
-          <span class="icon is-small is-left">
-            <i class="fas fa-user"></i>
-          </span>
-        </div>
-      </div>
-
-      <!--Message-->
-      <div class="field">
-        <label class="label">Message</label>
-        <div class="control">
-          <textarea class="textarea is-info" id="customerMsg" placeholder="Hello! I would like an appointment..."></textarea>
-        </div>
-      </div>
-
-      <!--Buttons-->
-      <div class="field is-grouped">
-        <div class="control">
-          <button class="button is-link" id="submit">Submit</button>
-        </div>
-        <div class="control">
-          <button class="button is-link is-light" id="cancel">Cancel</button>
-        </div>
-      </div>
-
-
-    </div>
-    
     <!--Joseph's image code for photos-->
     <div id = "photos"></div>
 
