@@ -48,15 +48,21 @@
                 </a>
                 <a class="navbar-item">
                   ####
-                </a>
-                
+                </a>   
         </div>
     </nav>
+
+    <!--DON'T DELETE, LOCAL STORAGE APPEND-->
+    <div class = "column is-full" id="welcome">
+      <h2>Welcome back CUSTOMER</h2>
+    </div>
+
     <!--ABOUT ME-->
     <div class="box">
       <div class = "column is-full">
         <h2>About Me</h2>
       </div>
+    </div>
       <!--Hairdresser card-->
       <div class ="columns">
         <div class="column card is-one-quarter .card">
@@ -161,7 +167,7 @@
       <div class="field">
         <label class="label">Name</label>
         <div class="control">
-          <input class="input is-info" type="text" placeholder="Your Name">
+          <input class="input is-info" id="customerName" type="text" placeholder="Your Name">
         </div>
       </div>
 
@@ -169,7 +175,7 @@
       <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left">
-          <input class="input is-info" type="email" placeholder="youremail@email.com" value="">
+          <input class="input is-info" id="customerEmail" type="email" placeholder="youremail@email.com" value="">
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
@@ -180,7 +186,7 @@
       <div class="field">
         <label class="label">Phone Number</label>
         <div class="control has-icons-left">
-          <input class="input is-info" type="tel" placeholder="###-###-####" value="">
+          <input class="input is-info" id="customerNum" type="tel" placeholder="###-###-####" value="">
           <span class="icon is-small is-left">
             <i class="fas fa-user"></i>
           </span>
@@ -191,17 +197,17 @@
       <div class="field">
         <label class="label">Message</label>
         <div class="control">
-          <textarea class="textarea is-info" placeholder="Hello! I would like an appointment..."></textarea>
+          <textarea class="textarea is-info" id="customerMsg" placeholder="Hello! I would like an appointment..."></textarea>
         </div>
       </div>
 
       <!--Buttons-->
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-link">Submit</button>
+          <button class="button is-link" id="submit">Submit</button>
         </div>
         <div class="control">
-          <button class="button is-link is-light">Cancel</button>
+          <button class="button is-link is-light" id="cancel">Cancel</button>
         </div>
       </div>
 
