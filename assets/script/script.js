@@ -32,64 +32,23 @@ fetch("https://api.pexels.com/v1/collections/6qa6dek", {
     console.log(data);
     console.log(data.media[0].src.medium);
     for (let i = 0; i < data.media.length; i++) {
-      
       var image = document.createElement("img");
+      
+      console.log(data.media[i].src.medium);
+      console.log(image)
+      
       image.setAttribute("src", "https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&h=350");
-      var photo2 = document.querySelector("#photos"); 
+      var photo1 = document.querySelector("#photos1"); //Paola's note
+      photo1.append(image);
+
+      image.setAttribute("src", "https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&h=350");
+      var photo2 = document.querySelector("#photos2"); //Paola's note
       photo2.append(image);
+
+      image.setAttribute("src", "https://images.pexels.com/photos/3065170/pexels-photo-3065170.jpeg?auto=compress&cs=tinysrgb&h=350");
+      var photo3 = document.querySelector("#photos3"); //Paola's note
+      photo3.append(image);
+
     }
   });
-
-//PAOLA'S FUNCTION FOR SUBMIT BUTTON AND LOCAL STORAGE
-
-var customerArray = [];
-var submitBtn = document.querySelector("#submit");
-
-submitBtn.addEventListener("click", function(event) {
-  event.preventDefault();
-
-  console.log(this);//success, shows specific button pressed
-
-  console.log(document.getElementById("customerName").value); //Success
-  var customerName = document.getElementById("customerName").value;
-
-  console.log(document.getElementById("customerEmail").value);//Success
-  var customerEmail = document.getElementById("customerEmail").value;
-
-  console.log(document.getElementById("customerNum").value);//Success
-  var customerNum = document.getElementById("customerNum").value;
-
-  console.log(document.getElementById("customerMsg").value); //Success
-  var customerMsg = document.getElementById("customerMsg").value;
-
-  if(customerName.trim().length < 1) {
-    window.alert("Please enter a name");//success
-  } else if (localStorage == null) {
-    console.log("something is in local storage");//success
-
-    var customerName = document.getElementById("customerName").value;
-    var customerEmail = document.getElementById("customerEmail").value;
-    var customerNum = document.getElementById("customerNum").value;
-    var customerMsg = document.getElementById("customerMsg").value;
-
-    // var customerObj {
-    //   name: customerName,
-    //   email: customerEmail,
-    //   number:  customerNum,
-    //   message: customerMsg,
-    // }
-
-    console.log(customerObj);
-
-  } else {
-    console.log("there is nothing in local storage yet");//success
-  }
-
-
-
-
-
-})
-
-
 
