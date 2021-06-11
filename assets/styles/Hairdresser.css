@@ -1,15 +1,22 @@
 body {
-    background-image: url('https://media.istockphoto.com/vectors/hair-salon-background-10-vector-id1192246997?k=6&m=1192246997&s=612x612&w=0&h=ndB8ewxmPu1w606KKHEHM6xHoYW53iDEPQahV1DJhls=')
+    background-image: url("https://i.pinimg.com/originals/13/75/6d/13756de2e58ea0c1e68b3495de6bf579.jpg");
+    
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
 }
-/*Navbar code*/
+
+
+/* Navigation Styles */
 .navbar {
+    margin-top: -25px;
     background-color: #6e4343;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     height: 10px;
 }
 /*Social media icons in navbar*/
 .fa {
-    padding: 20px;
+    
     font-size: 30px;
     width: 50px;
     text-align: center;
@@ -40,9 +47,8 @@ body {
     display: flex;
     align-items: center;
 }
-/*Dropdown in right of navbar*/
 .navbar-link {
-    color: #D27575;
+    color: beige;
 }
 .navbar-dropdown{
     background-color: teal;
@@ -50,63 +56,38 @@ body {
 .navbar-dropdown .navbar-item {
     background-color:teal ;
 }
-/*About me section*/
-/*main container*/
-.aboutMeBox {
-    
-    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
-    padding: 1.25rem;
-    display: flex;
-    flex-direction: row;
-    height: 1000px;
-}
-/*card container*/
-.card {
-    position: relative;
-    right:200px;
-    top:100px;
-    width: 20%;
-    margin-bottom:450px;
-    border-radius: 20px;
+.card{
+    margin-right: 0.75rem;
+    padding: 0px;
     
 }
-
-/*container for facebook images*/
-.boxPhotos{
-position: absolute;
-right: 10px;
-width: 60%;
-height: 50%;
-margin: 0px;
-margin-top: 20px;
-background-color: #E2A5A5;
-border-radius: 20px;
+.card-content {
+    background-color:#ad7878 ;
+    border-radius: 0px, 0px,30px,30px;
+    
+  
 }
-/*container for services offered*/
-.boxServices {
-    background-color: #7E5D5D;
-    position: absolute;
-    width: 60%;
-    height: 30%;
-    margin: 0 auto;
-    padding: 10px;
-    bottom:-75px;
+.column
+/* Text Styles */
+h2 {
+    font-size: 2em;
+    font-weight: bold;
 }
-/*container for google maps*/
-.mapBox{
-    margin: 50px;
-    width: 40%;
-    background-color:#F0E5E5;
-    border-radius: 10px;
-    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
-    color: #4a4a4a;
-    display: block;
-    padding: 1.25rem;
-    position: absolute;
-    bottom:0px;
-    left: 50%;
-    transform: translate(-50%);
-
+.box{
+    background: rgba(204, 131, 131, 0.3);
+    margin-top: 20px;
+    color: rgba(251, 200, 202, 0.726);
+    
+}
+.content{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+.image{
+ border-style: solid;
+ border-color: #624700;
+ border-width: 10px;
 }
 /* Paola's Style for Google Map */
 #mapHeader {
@@ -116,8 +97,9 @@ border-radius: 20px;
 
 #map {
     height: 300px;
-    width: 50%;
+    width: 80%;
     display: block;
     margin: 40px;
     border: 2px double rgb(223, 118, 118);
 }
+
