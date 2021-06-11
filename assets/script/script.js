@@ -17,7 +17,6 @@ function initMap() {
 
 // Access photos from collection with Pexel API
 // Render Pexel photos on screen.
-// !!! NEED TO EITHER LOOP 3 IMAGES TO SHOW, OR ADD EACH IMAGE SEPARATE !!!
 fetch("https://api.pexels.com/v1/collections/6qa6dek", {
   headers: {
     Authorization: "563492ad6f91700001000001207f3ab348db4147b699565de961df61",
@@ -30,25 +29,16 @@ fetch("https://api.pexels.com/v1/collections/6qa6dek", {
   .then((data) => {
     const html = data.data;
     console.log(data);
-    console.log(data.media[0].src.medium);
     for (let i = 0; i < data.media.length; i++) {
-      var image = document.createElement("img");
+      var image = data.media[i].src.medium;
+      image = document.createElement("img");
       
       console.log(data.media[i].src.medium);
       console.log(image)
       
-      image.setAttribute("src", "https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&h=350");
-      var photo1 = document.querySelector("#photos1"); //Paola's note
+      image.setAttribute("src", data.media[i].src.medium);
+      var photo1 = document.querySelector("#photos"+[i]); 
       photo1.append(image);
-
-      image.setAttribute("src", "https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&h=350");
-      var photo2 = document.querySelector("#photos2"); //Paola's note
-      photo2.append(image);
-
-      image.setAttribute("src", "https://images.pexels.com/photos/3065170/pexels-photo-3065170.jpeg?auto=compress&cs=tinysrgb&h=350");
-      var photo3 = document.querySelector("#photos3"); //Paola's note
-      photo3.append(image);
-
     }
   });
 
