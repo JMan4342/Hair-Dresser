@@ -17,7 +17,6 @@ function initMap() {
 
 // Access photos from collection with Pexel API
 // Render Pexel photos on screen.
-// !!! NEED TO EITHER LOOP 3 IMAGES TO SHOW, OR ADD EACH IMAGE SEPARATE !!!
 fetch("https://api.pexels.com/v1/collections/6qa6dek", {
   headers: {
     Authorization: "563492ad6f91700001000001207f3ab348db4147b699565de961df61",
@@ -30,9 +29,9 @@ fetch("https://api.pexels.com/v1/collections/6qa6dek", {
   .then((data) => {
     const html = data.data;
     console.log(data);
-    console.log(data.media[0].src.medium);
     for (let i = 0; i < data.media.length; i++) {
-      var image = document.createElement("img");
+      var image = data.media[i].src.medium;
+      image = document.createElement("img");
       
       console.log(data.media[i].src.medium);
       console.log(image)
