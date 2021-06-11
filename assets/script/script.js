@@ -52,22 +52,20 @@ submitBtn.addEventListener("click", function(event) {
 
   console.log(this);//success, shows specific button pressed
 
-  console.log(document.getElementById("customerName").value); //Success
   var customerName = document.getElementById("customerName").value;
 
-  console.log(document.getElementById("customerEmail").value);//Success
   var customerEmail = document.getElementById("customerEmail").value;
 
-  console.log(document.getElementById("customerNum").value);//Success
   var customerNum = document.getElementById("customerNum").value;
 
-  console.log(document.getElementById("customerMsg").value); //Success
   var customerMsg = document.getElementById("customerMsg").value;
 
   if(customerName.trim().length < 1) {
     window.alert("Please enter a name");//success
-  } else if (localStorage == null) {
+  } else if (localStorage.customerArray != null){
     console.log("something is in local storage");//success
+
+    var savedCustomerArray = JSON.parse(localStorage.getItem("customerArray")); //grabbing what is in storage
 
     var customerName = document.getElementById("customerName").value;
     var customerEmail = document.getElementById("customerEmail").value;
@@ -81,14 +79,29 @@ submitBtn.addEventListener("click", function(event) {
       message: customerMsg,
     }
 
-    console.log(customerObj);
+    savedCustomerArray.push(customerObj);
+    localStorage.setItem("customerArray", JSON.stringify(savedCustomerArray));//sending it back to storage
 
   } else {
     console.log("there is nothing in local storage yet");//success
-  }
 
+    var customerName = document.getElementById("customerName").value;
+    var customerEmail = document.getElementById("customerEmail").value;
+    var customerNum = document.getElementById("customerNum").value;
+    var customerMsg = document.getElementById("customerMsg").value;
 
+    var customerObj = {
+      name: customerName,
+      email: customerEmail,
+      number:  customerNum,
+      message: customerMsg,
+    }
 
+    console.log(customerObj);//success
 
+    customerArray.push(customerObj);
 
-})
+    localStorage.setItem("customerArray", JSON.stringify(customerArray));
+  };
+
+});
