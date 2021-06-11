@@ -32,10 +32,23 @@ fetch("https://api.pexels.com/v1/collections/6qa6dek", {
     console.log(data);
     console.log(data.media[0].src.medium);
     for (let i = 0; i < data.media.length; i++) {
-      
       var image = document.createElement("img");
+      
+      console.log(data.media[i].src.medium);
+      console.log(image)
+      
       image.setAttribute("src", "https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&h=350");
-      var photo2 = document.querySelector("#photos[index]"); //Paola's note
+      var photo1 = document.querySelector("#photos1"); //Paola's note
+      photo1.append(image);
+
+      image.setAttribute("src", "https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&h=350");
+      var photo2 = document.querySelector("#photos2"); //Paola's note
       photo2.append(image);
+
+      image.setAttribute("src", "https://images.pexels.com/photos/3065170/pexels-photo-3065170.jpeg?auto=compress&cs=tinysrgb&h=350");
+      var photo3 = document.querySelector("#photos3"); //Paola's note
+      photo3.append(image);
+
     }
   });
+
