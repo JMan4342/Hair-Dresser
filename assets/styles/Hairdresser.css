@@ -142,3 +142,12 @@ h2 {
 .imhere { 
     line-height: 2;
 }
+
+/* Paola's hide and reveal classes */
+.hide {
+    display: none;
+}
+
+.reveal {
+    display: block;
+}
