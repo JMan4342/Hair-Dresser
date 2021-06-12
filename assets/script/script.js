@@ -17,24 +17,19 @@ function initMap() {
 
 // Access photos from collection with Pexel API
 // Render Pexel photos on screen.
-fetch("https://api.pexels.com/v1/collections/6qa6dek", {
+fetch("https://api.pexels.com/v1/collections/94y0vkn", {
   headers: {
     Authorization: "563492ad6f91700001000001207f3ab348db4147b699565de961df61",
   },
 })
   .then((resp) => {
-    console.log(resp);
     return resp.json();
   })
   .then((data) => {
     const html = data.data;
-    console.log(data);
     for (let i = 0; i < data.media.length; i++) {
       var image = data.media[i].src.medium;
       image = document.createElement("img");
-      
-      console.log(data.media[i].src.medium);
-      console.log(image)
       
       image.setAttribute("src", data.media[i].src.medium);
       var photo1 = document.querySelector("#photos"+[i]); 
