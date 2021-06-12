@@ -44,10 +44,9 @@ The link to our wireframe can be found on Figma at the following link:
 
 ## Rough breakdown of collaborators' tasks
 
-* Create HTML and apply CSS with Bulma- Miguel
-* JavaScript- fetch request, navigation links - Ricky
-* Local Storage - Ricky and Paola
-* APIs research for url parameters and getting data for JSON response
+* Create HTML and apply CSS with Bulma- Miguel, Paola, Ricky
+* Local Storage Functions- Paola
+* APIs research for url parameters, fetch requests, and appending
     * Google Maps - Paola
-    * Facebook Photos - Joseph
+    * Pexel API - Joseph
 
