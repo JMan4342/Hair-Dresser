@@ -12,7 +12,7 @@
 
 ## Project Description
 
-Web application for a hairdresser’s clients. Her clients can visit this page to see the services she offers. Clients can leave their contact information so that the hairdresser can get in touch with them. The client's information will be saved in local storage to thank the client for their submission and to personalize the page for them for when they revisit. Clients can also look at the location of the salon with the option to navigate there with Google Maps. The website has example photos of hairdressers' work obtained through the Pexel API.
+Web application for a hairdresser’s customers. Her customers can visit this page to see the services she offers. Customers can leave their contact information so that the hairdresser can get in touch with them. The customer's information will be saved in local storage to thank the them for their submission and to personalize the page for when they revisit. Customers can also look at the location of the salon with the option to navigate there with Google Maps. The website has example photos of hairdressers' work obtained through the Pexel API.
 
 
 ## User Story
@@ -50,4 +50,5 @@ The link to our wireframe can be found on Figma at the following link:
 * APIs research for url parameters, fetch requests, and appending
     * Google Maps - Paola
     * Pexel API - Joseph
+* Webpage links and extra details - Joseph
 

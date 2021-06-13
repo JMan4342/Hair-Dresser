@@ -119,7 +119,10 @@ submitBtn.addEventListener("click", function(event) {
 
     //Modifying Welcome Message
     var welcome = document.getElementById("welcome");
-    welcome.textContent = "Welcome!";
+    if(welcome.textContent != "Welcome!") {
+      welcome.setAttribute("class", "reveal");
+      welcome.textContent = "Welcome!";
+    }
 
     //Clearing form text
     document.querySelector("input[type=text]").value= "";
