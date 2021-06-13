@@ -6,6 +6,9 @@ body {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* Navigation Styles */
 .navbar {
     margin-top: -25px;
