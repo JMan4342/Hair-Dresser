@@ -56,10 +56,10 @@ html {
     color: beige;
 }
 .navbar-dropdown{
-    background-color: teal;
+    background-color: #ad7878;
 }
 .navbar-dropdown .navbar-item {
-    background-color:teal ;
+    background-color:#ad7878 ;
 }
 .card{
     margin-right: 0.75rem;
@@ -82,7 +82,7 @@ h2 {
 }
 .box{
     background: rgba(204, 131, 131, 0);
-    margin-top: 20px;
+    /* margin-top: 20px; */
     color: rgba(251, 200, 202, 0.726);
     
 }
@@ -120,7 +120,7 @@ h2 {
 
 #map {
     height: 300px;
-    width: 80%;
+    width: 600px;
     display: block;
     margin: 40px;
     border: 2px double rgb(223, 118, 118);
@@ -129,7 +129,7 @@ h2 {
 
 /* Ricky's call button */
 .headerbtn {
-    background: rgba(204, 131, 131, 0.3);
+    /* background: rgba(204, 131, 131, 0.3); */
     padding: 0.5em;
     font-weight: bold;
     font-size: 15px;
@@ -141,6 +141,7 @@ h2 {
 
 .imhere { 
     line-height: 2;
+    font-size: larger;
 }
 
 /* Paola's classes for appended content */
