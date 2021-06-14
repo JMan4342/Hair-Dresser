@@ -56,10 +56,10 @@ html {
     color: beige;
 }
 .navbar-dropdown{
-    background-color: teal;
+    background-color: rgb(180, 78, 103);
 }
 .navbar-dropdown .navbar-item {
-    background-color:teal ;
+    background-color:rgb(180, 78, 103);
 }
 .card{
     margin-right: 0.75rem;
@@ -79,6 +79,12 @@ h2 {
     font-weight: bold;
     display: flex;
     justify-content: center;
+    color: #ad7878;
+}
+p { display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(201, 217, 231);
 }
 .box{
     background: rgba(204, 131, 131, 0);
@@ -91,7 +97,25 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin: 10px;
  }
+.tableStyle {
+    background-color: #482b0db4;
+    color: #eabfb6;
+    border-radius: 20px;
+ }
+ .table.is-striped tbody tr:not(.is-selected):nth-child(even) {
+    background-color: #482b0dab;
+}
+.table th:not([align]) {
+    text-align: inherit;
+    color: pink;
+
+}
+.table tbody {
+    background-color: transparent;
+    
+}
 .content{
     color: black;
     font-size: large;
@@ -120,19 +144,24 @@ h2 {
 
 #map {
     height: 300px;
-    width: 80%;
+    width: 40%;
     display: block;
     margin: 40px;
     border: 2px double rgb(223, 118, 118);
-    float: left;
-}
+    align-self: center;
 
+}
+.mapBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 /* Ricky's call button */
 .headerbtn {
     background: rgba(204, 131, 131, 0.3);
     padding: 0.5em;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .contact {
@@ -141,6 +170,7 @@ h2 {
 
 .imhere { 
     line-height: 2;
+    
 }
 
 /* Paola's classes for appended content */
