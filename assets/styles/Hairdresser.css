@@ -18,9 +18,9 @@ html {
     height: 10px;
 }
 
-.navbar-end {
+/* .navbar-end {
     margin-right: 100px;
-}
+} */
 
 /*Social media icons in navbar*/
 .fa {
@@ -63,6 +63,7 @@ html {
 
 .navbar-link {
     color: beige;
+    background: #6e4343;
 }
 
 .navbar-dropdown {
