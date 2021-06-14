@@ -22,24 +22,28 @@
       <!-- logo/brand-->
       <div class="navbar-brand">
         <a class="navbar-item">
-          <img src= "assets/images/hairdresserLogo.png" alt="#" style="max-height: 40px"
-        /></a> 
+          <img src= "assets/images/hairdresserLogo.png" alt="#" style="max-height: 40px"/>
+        </a> 
       <!-- social media links-->
         <a class="navbar-item" href="#">
           <a href="https://www.facebook.com/Rocios-Hair-and-Design-439359219782282" class="fa fa-facebook" target="_blank"></a>
           <!-- <a href="#" class="fa fa-twitter"></a> -->
           <a href="https://www.instagram.com/rocio_hair_mtz/?hl=en" class="fa fa-instagram" target="_blank"></a>
-        </div>
+      </div>
       <!-- dropdown menu-->
-      <div class="navbar-end">
+      <!--added navbar-burger for mobile cases-->
+      <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      <div class="navbar-menu navbar-end" id="navMenu">
         <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
                 Menu
               </a>
-          
               <div class="navbar-dropdown">
                 <a class="navbar-item" href=#aboutMe>
-                  About me
+                  About Me
                 </a>
                 <a class="navbar-item" href=#prices>
                   Prices and Services
@@ -47,7 +51,9 @@
                 <a class="navbar-item" href=#contactUs>
                   Contact Us
                 </a>   
+              </div>
         </div>
+      </div>
     </nav>
 
     <!--DON'T DELETE OR MODIFY, LOCAL STORAGE APPEND-->
@@ -182,22 +188,16 @@
         <!--Email-->
         <div class="field">
           <label class="label">Email</label>
-          <div class="control has-icons-left">
+          <div class="control">
             <input class="input is-info" id="customerEmail" type="email" placeholder="youremail@email.com" value="">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
-            </span>
           </div>
         </div>
         
         <!--Phone Number-->
         <div class="field">
           <label class="label">Phone Number</label>
-          <div class="control has-icons-left">
+          <div class="control">
             <input class="input is-info" id="customerNum" type="tel" placeholder="###-###-####" value="">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
-            </span>
           </div>
         </div>
 

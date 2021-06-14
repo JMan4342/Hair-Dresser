@@ -34,7 +34,7 @@ SO THAT I can find the salon
 The link to our wireframe can be found on Figma at the following link:
 > [Figma Project1 Link](https://www.figma.com/file/CQvJu55Ah4v6Tz9nYmuzbH/Project-1?node-id=0%3A1)
 
-![Screenshot of our Hairdresser Website ](assets\images\figmaScreenshot.png)
+![Screenshot of our Hairdresser Website](assets\images\figmaScreenshot.png)
 
 ## APIs to be used
 
@@ -45,7 +45,7 @@ The link to our wireframe can be found on Figma at the following link:
 ## Rough breakdown of collaborators' tasks
 
 * Figma Wireframe - Miguel
-* Create HTML and apply CSS with Bulma- Miguel, Paola, Ricky
+* Create HTML and apply CSS with Bulma- Miguel, Paola, Joseph, Ricky
 * Local Storage Functions- Paola
 * APIs research for url parameters, fetch requests, and appending
     * Google Maps - Paola
