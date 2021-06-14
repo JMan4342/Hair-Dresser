@@ -74,6 +74,11 @@ html {
     background-color:rgb(180, 78, 103);
 }
 
+.itemScript {
+    color: beige;
+    font-weight: normal;
+}
+
 .card {
     margin-right: 0.75rem;
     padding: 0px;
